@@ -9,8 +9,7 @@ const Welcome = () => {
           <Image
             src="https://media.contentapi.ea.com/content/dam/gin/common/logos/battlefront-2-mono-logo.png"
             alt="Battlefront 2 Logo"
-            width={400}
-            height={150}
+            
           />
         </div>
       </div>

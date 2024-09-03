@@ -11,8 +11,6 @@ const About = () => {
             <Image
               src="https://images2.alphacoders.com/876/thumb-1920-876963.jpg"
               alt="Star Wars Battlefront II"
-              width={600} // Specify the width of the image
-              height={400} // Specify the height of the image
               layout="responsive" // Makes the image responsive
             />
           </div>

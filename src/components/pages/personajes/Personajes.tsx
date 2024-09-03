@@ -44,8 +44,7 @@ const Personajes = () => {
           {todo.map((el) => (
             <div key={el.id} className={scss.card}>
               <Link href={`/details/${el.id}`}>
-                {/* Use the optimized Image component */}
-                <Image src={el.url} alt={el.title} width={300} height={300} />
+                <Image src={el.url} alt={el.title} />
               </Link>
 
               <h5>{el.be}</h5>
