@@ -1,14 +1,19 @@
+import Image from "next/image"; // Import the Image component
 import scss from "./About.module.scss";
 
 const About = () => {
   return (
-    <section id="#about" className={scss.About}>
+    <section id="about" className={scss.About}>
       <div className="container">
         <div className={scss.content}>
           <div className={scss.aboutImage}>
-            <img
+            {/* Use the optimized Image component */}
+            <Image
               src="https://images2.alphacoders.com/876/thumb-1920-876963.jpg"
-              alt=""
+              alt="Star Wars Battlefront II"
+              width={600} // Specify the width of the image
+              height={400} // Specify the height of the image
+              layout="responsive" // Makes the image responsive
             />
           </div>
           <div className={scss.aboutText}>

@@ -2,6 +2,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image"; // Import the Image component
 import scss from "./Personajes.module.scss";
 
 interface IUperson {
@@ -43,7 +44,8 @@ const Personajes = () => {
           {todo.map((el) => (
             <div key={el.id} className={scss.card}>
               <Link href={`/details/${el.id}`}>
-                <img src={el.url} alt="" />
+                {/* Use the optimized Image component */}
+                <Image src={el.url} alt={el.title} width={300} height={300} />
               </Link>
 
               <h5>{el.be}</h5>
